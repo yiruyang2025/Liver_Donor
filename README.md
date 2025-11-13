@@ -81,37 +81,6 @@ make -j4
 ```
 
 
-### 3. Run
-
-```
-./ukbiobank2d --input ../data/example_image.png --output ../results/  
-```
-
-  - `2D-UKBiobank/` is the project directory, `ukbiobank2d` is the compiled program file
-
-
-### 4. Data
-
-
-  - Place sample 2D images into the `data/` directory (e.g., UK Biobank slices).
-
-  - The `results/` folder will contain predictions and metric logs after running.
-
-
-
-### 5. Documentation and Usage
-
-  - See `docs/` for method description, datasets information and paper
-
-
-<br>
-
-
-
-
-
 <br><br><br>
-
-
 
 
