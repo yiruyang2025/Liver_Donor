@@ -4,9 +4,9 @@
 
 Nov 2025 - Feb 2026 ｜ AI Center, UZH AI, USZ | NeurIPS May 2026, ECCV Mar 26, master thesis
 
-co-first authors: Yiru Yang, (dhia, songyou peng学长 & Xiaohua Zhai学长 if available),<br>
+co-first authors: Yiru Yang, (dhia, songyou peng学长 if available),<br>
 authors: xxx, <br>
-supervisors: prof. Davide Scaramuzza, Dr. Wei Wei, Dr. Yong Wang<br>
+supervisors: ViT author Xiaohua Zhai学长 if available, prof. Davide Scaramuzza, Dr. Wei Wei, Dr. Yong Wang<br>
 
 
 </div>
@@ -33,7 +33,7 @@ supervisors: prof. Davide Scaramuzza, Dr. Wei Wei, Dr. Yong Wang<br>
 
 <br>
 
-> To address the above fundamental wrongness, we propose MedNet as multimodal ViT backbone for real-world bio signal processing. Dataset from `either google / meta’s research glasses`.<br>
+> To address the above fundamental wrongness, we propose ★MedNet as multimodal ViT backbone for real-world bio signal processing. Dataset from `either google / meta’s research glasses`.<br>
 > Dataset, UKB-RAP, https://www.ukbiobank.ac.uk/use-our-data/research-analysis-platform/, ukbiobank tier 1, 2D<br>
 
 <br>
