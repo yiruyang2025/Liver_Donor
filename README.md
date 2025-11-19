@@ -1,8 +1,8 @@
 <div align="center">
   
-# ★ MedNet: Multi-modal ViT on Large-scale 3D Clinic Data
+# MedNet: Multi-modal ViT on Large-scale 3D Clinic Data
 
-Nov 2025 - Feb 2026 ｜ AI Center, UZH AI, USZ ｜ NeurIPS May 2026, ECCV Mar 26, doctoral thesis
+Nov 2025 - Mar 2026 ｜ AI Center, UZH AI, USZ ｜ NeurIPS May 2026, ECCV Mar 26, doctoral thesis
 
 co-first authors: Yiru Yang, (dhia, songyou peng学长 if available),(Taein Kwon)<br>
 authors: xxx, <br>
