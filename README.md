@@ -77,15 +77,6 @@ MedNet is specifically designed for continuous real-world bio-signals, including
 Instead of forcing all signals into text tokens, MedNet processes each modality in its native continuous space.
 
 
-## Readings
-[1] Multimodal LLMs for health grounded in individual-specific data, 2023. https://arxiv.org/pdf/2307.09018
-
-
-
-
-
-<br>
-
 
 ## Get Started
 
@@ -104,6 +95,11 @@ mkdir build && cd build
 cmake ..  
 make -j4  
 ```
+
+
+## Readings
+[1] Multimodal LLMs for health grounded in individual-specific data, 2023. https://arxiv.org/pdf/2307.09018
+
 
 
 <br><br><br>
