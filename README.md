@@ -1,6 +1,8 @@
 <div align="center">
   
-# MedNet: Multi-modal ViT on Large-scale 3D Clinic Data
+# Med_CLIP: A Large-scale Multi-modal LLM encoding 3D Clinic Data
+
+Test on Disease Prediction, ViT backbone, with Semantic Awareness
 
 Nov 2025 - Mar 2026 ｜ AI Center, UZH AI, CVG, ETHz SCAI Lab ｜ NeurIPS May 2026, ECCV Mar 26, master thesis
 
