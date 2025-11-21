@@ -1,6 +1,6 @@
 <div align="center">
   
-# Med_CLIP: A Large-scale Multi-modal LLM encoding 3D Clinic Data
+# 3D_LLM: A Large-scale Multi-modal LLM encoding 3D Clinic Data
 
 Test on Disease Prediction, ViT backbone, with Semantic Awareness
 
