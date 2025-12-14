@@ -2,7 +2,7 @@
   
 # 3D_LLM: A Large-scale Multi-modal LLM encoding 3D Clinic Data
 
-Test on Disease Prediction, ViT backbone, (with Semantic Awareness)
+A Tiny ViT
 
 Nov 2025 - Feb 2026 ｜ AI Center, UZH AI, CVG, SCAI ｜ NeurIPS May 2026, ECCV Mar 26
 
