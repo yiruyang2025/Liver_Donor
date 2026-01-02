@@ -2,13 +2,12 @@
   
 # 3D_LLM: A Large-scale Multi-modal LLM encoding 3D Clinic Data
 
-A Tiny ViT
+A Tiny ViT for multi-modal medical 2D data classification
 
-AI Center, UZH AI, CVG, SCAI ｜ NeurIPS May 2026, ECCV Mar 26
+AI Center, UZH AI, University Hospital of Zurich ｜ ICML Jan, NeurIPS May, ECCV Mar 2026
 
-co-first authors: Yiru Yang, Wen Guo, (dhia, songyou peng学长 if available),(Tianlin Liu, Taein Kwon)<br>
-authors: xxx, <br>
-supervisors: ViT author Xiaohua Zhai学长 if available, Yanke Li, prof. Davide Scaramuzza <br>
+co-first authors: Yiru Yang, Wei Wei, Yong Wang, (dhia, songyou peng if available)
+supervisors: ViT author, (prof. Davide Scaramuzza)
 
 
 </div>
