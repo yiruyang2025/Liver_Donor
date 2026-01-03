@@ -1,6 +1,6 @@
 <div align="center">
   
-# 3D_LLM: A Large-scale Multi-modal LLM encoding 3D Clinic Data
+# Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
 
 A Tiny ViT for multi-modal medical data classification
 
