@@ -1,6 +1,6 @@
 <div align="center">
   
-## Learning on Manifold: Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
+## Learning in Latent: Self-supervised Model Predicting Liver Transplantability Based On Transplant Donor Medical Data
 
 University of Zurich, University Hospital of Zurich, ETH AI Center
 
