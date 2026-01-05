@@ -19,6 +19,7 @@ Due to strict clinical governance and patient confidentiality, raw donor data an
 - complete preprocessing and modeling code
 - full data schema
 - synthetic example donors<br>
+
 All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols.
 
 <br>
