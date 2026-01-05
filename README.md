@@ -50,44 +50,6 @@ Liver_transplantability/
 
 <br>
 
-## Datasets in Use by Nov 2025<br>
-
-> Google / Meta’s Aria gen 2 research glasses<br>
-> UKB-RAP, https://www.ukbiobank.ac.uk/use-our-data/research-analysis-platform/, ukbiobank tier 1<br>
-> Cardiac MRI using the Swiss Heart Study<br>
-
-## Training Goal
-
-The goals of MedNet are:
-- To ensure each bio-signal exists in a continuous space (ℝⁿ)
-- To process it using CNN + ViT + KNN (local manifold)
-- To preserve the original signal's geometry, topology, and frequency structure
-- To output a semantic latent, not a fake token
-- Ultimately, to allow LLM to see true continuous semantics instead of random tokens
-
-
-High-dimensional continuous clinical/wearable signals, including:
-- EEG / MEG / neural biosignals
-- ECG / PPG / Doppler
-- depth / infrared
-- wearable motion trajectories
-- Audio (diagnostic audio like cough/breath)
-- High-frequency physiological waveforms
-- Google / Meta Research glasses sensor streams
-- AR medical sensor data
-- UK Biobank continuous measurements (spirometry, accelerometer)
-
-
-MedNet is specifically designed for continuous real-world bio-signals, including:
-- high-frequency physiological waveforms
-- neural biosignals
-- audio / Doppler / PPG
-- depth / infrared
-- motion trajectories
-- wearable sensor streams (health trackers, AR glasses, medical devices)
-  
-Instead of forcing all signals into text tokens, MedNet processes each modality in its native continuous space.
-
 
 
 ## Get Started
