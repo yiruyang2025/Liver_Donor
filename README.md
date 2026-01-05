@@ -18,7 +18,7 @@ ICML Jan, NeurIPS May, ECCV Mar 2026
 Due to strict clinical governance and patient confidentiality, raw donor data and PDF-derived JSON files cannot be shared. This repository provides:
 - complete preprocessing and modeling code
 - full data schema
-- synthetic example donors
+- synthetic example donors<br>
 All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols.
 
 <br>
