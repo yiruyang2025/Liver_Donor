@@ -43,8 +43,8 @@ Liver_transplantability/
 │   ├── evaluate.py              # LOOCV / metrics
 │   └── utils.py                 # common helpers
 │
-├── experiments/
-│   └── train.sh         
+├── cross_validation/
+│   └── run_loocv.sh             # LOOCV = gold standard when N < 100
 │
 ├── requirements.txt
 ├── README.md
@@ -92,7 +92,7 @@ make -j4
 
 
 ## Readings
-[1] Multimodal LLMs for health grounded in individual-specific data, 2023. https://arxiv.org/pdf/2307.09018
+[1] Multimodal LLMs for health grounded in individual-specific data, 2023. https://arxiv.org/pdf/2307.09018<br>
 [2] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
 
 
