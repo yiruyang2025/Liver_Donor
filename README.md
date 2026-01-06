@@ -107,12 +107,12 @@ make -j4
 
 
 ## Readings
+
 - [1] Multimodal LLMs for health grounded in individual-specific data, 2023.
 - [2] SimCLR – Chen et al., ICML 2020
 - [3] BYOL – Grill et al., NeurIPS 2020
 - [4] DINO – Caron et al., ICCV 2021
 - [5] A Survey on Self-Supervised Representation Learning, 2023.
-  
 - [6] TabPFN – Hollmann et al., ICLR 2023
 - [7] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
 - [8] Data-Efficient Reinforcement Learning with Self-Supervised Predictive Representations. NeurIPS 2021.
