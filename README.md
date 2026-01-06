@@ -38,8 +38,12 @@ All experimental results reported in the paper were obtained using confidential 
 Liver_transplantability/
 ├── data/            
 │   ├── schema.json             
-│   └── example_donor.json
-│
+│   ├── example_donor.json
+│   └── private/
+│       ├── donor_001.json
+│       ├── donor_002.json
+│       ├── ...
+│       └── donor_039.json
 ├── src/
 │   ├── __init__.py
 │   ├── data_loader.py           # JSON → feature vector
