@@ -26,8 +26,10 @@ All experimental results reported in the paper were obtained using confidential 
 
 ## Overview
 
-- Our work follows the DeepMind line of representation-first learning, where structure is learned prior to task supervision, and labels are used only to minimally align representations to downstream decisions under extreme data scarcity.
-- We learn a donor state manifold using 39 DIFs, and then align it to the real transplantation decision with minimal supervision.
+- Our work follows the DeepMind line of representation-first learning, where structure is learned prior to task supervision, and labels are used only to minimally align representations to downstream decisions under extreme data scarcity
+- donor representation encoder
+
+**Key Words**: representation-first learning, encoder + SSL objectives
 
 
 <br>
