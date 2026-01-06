@@ -16,20 +16,21 @@ ICML Jan, NeurIPS May, ECCV Mar 2026
 ## Data Availability
 
 Due to strict clinical governance and patient confidentiality, raw donor data and PDF-derived JSON files cannot be shared. This repository provides:
+
 - complete preprocessing and modeling code
-- full data schema
+- full data schema from `json`
 - synthetic example donors<br>
 
-All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols.
+All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols
 
 <br>
 
 ## Overview
 
 - Our work follows the DeepMind line of representation-first learning, where structure is learned prior to task supervision, and labels are used only to minimally align representations to downstream decisions under extreme data scarcity
-- donor representation encoder
+- We learn the donor representation encoder, and then use the binary transplantability classification (TX vs. NTX) only to test whether it is meaningful
 
-**Key Words**: representation-first learning, encoder + SSL objectives
+**Key Words**: Representatio Learning, Data Scarcity, Self-supervised Learning
 
 
 <br>
@@ -37,7 +38,7 @@ All experimental results reported in the paper were obtained using confidential 
 ## Structure - Zip file for conference submission
 
 ```
-Liver_transplantability/
+Liver_predictor/
 ├── data/            
 │   ├── schema.json             
 │   ├── example_donor.json
@@ -107,11 +108,16 @@ make -j4
 
 ## Readings
 - [1] Multimodal LLMs for health grounded in individual-specific data, 2023.
-- [2] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
-- [3] What Makes for Good Views for Contrastive Learning? NeurIPS 2020.
-- [4] Data-Efficient Reinforcement Learning with Self-Supervised Predictive Representations. NeurIPS 2021.
-- [5] VICReg: Variance-Invariance-Covariance Regularization for Self-Supervised Learning. ICLR 2022.
-- [6] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
+- [2] SimCLR – Chen et al., ICML 2020
+- [3] BYOL – Grill et al., NeurIPS 2020
+- [4] DINO – Caron et al., ICCV 2021
+- [5] A Survey on Self-Supervised Representation Learning, 2023.
+  
+- [6] TabPFN – Hollmann et al., ICLR 2023
+- [7] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
+- [8] Data-Efficient Reinforcement Learning with Self-Supervised Predictive Representations. NeurIPS 2021.
+- [9] Gorishniy et al., NeurIPS 2021.
+- [10] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
 
 
 <br><br><br>
