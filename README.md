@@ -113,16 +113,17 @@ make -j4
 ## Readings
 
 - [1] Multimodal LLMs for health grounded in individual-specific data, 2023.
-- [2] Let's Verify Step by Step, 2023.
-- [3] SimCLR – Chen et al., ICML 2020.
-- [4] BYOL – Grill et al., NeurIPS 2020.
-- [5] From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence, 2026.
-- [6] DINO – Caron et al., ICCV 2021.
-- [7] A Survey on Self-Supervised Representation Learning, 2023.
-- [8] TabPFN – Hollmann et al., ICLR 2023.
-- [9] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
-- [10] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
-- [11] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
+- [2] Visual and Semantic Similarity in ImageNet, 2011, https://research.google/pubs/visual-and-semantic-similarity-in-imagenet/.
+- [3] Let's Verify Step by Step, 2023.
+- [4] SimCLR – Chen et al., ICML 2020.
+- [5] BYOL – Grill et al., NeurIPS 2020.
+- [6] From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence, 2026.
+- [7] DINO – Caron et al., ICCV 2021.
+- [8] A Survey on Self-Supervised Representation Learning, 2023.
+- [9] TabPFN – Hollmann et al., ICLR 2023.
+- [10] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
+- [11] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
+- [12] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
 
 
 <br><br><br>
