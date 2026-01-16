@@ -5,7 +5,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class TransplantabilityClassifier(nn.Module):
-
  def __init__(self,encoder,encoder_output_dim=128,hidden_dims=[256,128],num_classes=2,dropout=0.2,freeze_encoder=False):
   super().__init__()
   self.encoder=encoder
