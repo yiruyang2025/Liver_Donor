@@ -4,7 +4,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 cd "$PROJECT_DIR"
 echo "Liver Transplantability - Ablation Study"
-echo "=========================================="
+echo "--------------------------------------"
 JSON_FILES="data/example_donor.json"
 SCHEMA_PATH="data/schema.json"
 ABLATION_DIR="ablation_results"
@@ -21,7 +21,7 @@ fi
 echo "Using device: $DEVICE"
 echo ""
 echo "Running Ablation Study..."
-echo "=========================="
+echo "-------------------"
 python src/ablation.py \
  --json_files $JSON_FILES \
  --schema_path $SCHEMA_PATH \
