@@ -3,20 +3,24 @@ import pandas as pd
 from pathlib import Path
 import argparse
 from typing import Dict, Tuple, Optional
+
 class AblationComparator:
     def __init__(self, ablation_dir: str = 'ablation_results', main_dir: str = 'results'):
         self.ablation_dir = Path(ablation_dir)
         self.main_dir = Path(main_dir)
         self.ablation_path = self.ablation_dir / 'ablation_results.json'
         self.main_path = self.main_dir / 'metrics.json'
+ 
     def load_results(self, path: Path) -> Dict:
         with open(path, 'r') as f:
             return json.load(f)
+ 
     def validate_paths(self) -> bool:
         if not self.ablation_path.exists():
             print(f"Error: Ablation results not found at {self.ablation_path}")
             return False
         return True
+ 
     def compare_ablation_results(self) -> Tuple[Dict, str, float]:
         ablation_results = self.load_results(self.ablation_path)
         best_config = None
@@ -27,6 +31,7 @@ class AblationComparator:
                 best_accuracy = acc
                 best_config = config_name
         return ablation_results, best_config, best_accuracy
+ 
     def compare_with_main_pipeline(self, best_config: str, ablation_results: Dict) -> Optional[Dict]:
         if not self.main_path.exists():
             return None
@@ -43,6 +48,7 @@ class AblationComparator:
             'main_results': main_results
         }
         return comparison
+  
     def format_results_table(self, ablation_results: Dict) -> pd.DataFrame:
         table_data = []
         for config_name, metrics in ablation_results.items():
@@ -61,6 +67,7 @@ class AblationComparator:
             }
             table_data.append(row)
         return pd.DataFrame(table_data)
+  
     def print_results(self, ablation_results: Dict, best_config: str, best_accuracy: float):
         print("\n" + "=" * 130)
         print("TABLE 1: ABLATION STUDY RESULTS - LIVER TRANSPLANTABILITY PREDICTION")
@@ -78,6 +85,7 @@ class AblationComparator:
             print(f"{config_name:<30} {acc:<12.4f} {auc:<12} {sens:<12} {spec:<12} {prec:<12} {f1:<12}{marker}")
         print("-" * 130)
         print(f"\nBest Configuration: {best_config} with {best_accuracy:.4f} accuracy")
+ 
     def print_comparison(self, comparison: Dict):
         print("\n" + "=" * 130)
         print("TABLE 2: MAIN PIPELINE VS BEST ABLATION CONFIGURATION")
@@ -96,12 +104,14 @@ class AblationComparator:
             print(f"\nResult: Ablation baseline achieves {abs(diff):.2%} higher accuracy")
         else:
             print(f"\nResult: Both configurations achieve statistically equivalent performance")
+ 
     def export_to_csv(self, ablation_results: Dict):
         df = self.format_results_table(ablation_results)
         csv_path = self.ablation_dir / 'ablation_summary.csv'
         df.to_csv(csv_path, index=False)
         print(f"\nResults exported to {csv_path}")
         return df
+
     def generate_summary_statistics(self, ablation_results: Dict) -> Dict:
         accuracies = [metrics['accuracy'] for metrics in ablation_results.values()]
         auc_scores = [metrics.get('auc_roc', 0.0) for metrics in ablation_results.values() if isinstance(metrics.get('auc_roc'), float)]
@@ -115,6 +125,7 @@ class AblationComparator:
             'mean_f1': sum(f1_scores) / len(f1_scores)
         }
         return summary
+
     def print_summary_statistics(self, summary: Dict):
         print("\n" + "=" * 130)
         print("SUMMARY STATISTICS ACROSS ALL CONFIGURATIONS")
@@ -123,6 +134,7 @@ class AblationComparator:
         print(f"Accuracy - Max: {summary['max_accuracy']:.4f}, Min: {summary['min_accuracy']:.4f}")
         print(f"AUC-ROC - Mean: {summary['mean_auc']:.4f}")
         print(f"F1-Score - Mean: {summary['mean_f1']:.4f}")
+
     def run(self):
         if not self.validate_paths():
             return
@@ -135,6 +147,7 @@ class AblationComparator:
         self.print_summary_statistics(summary)
         self.export_to_csv(ablation_results)
         print("\n" + "=" * 130)
+
 def main():
     parser = argparse.ArgumentParser(
         description='Ablation study comparison for liver transplantability prediction',
@@ -146,5 +159,6 @@ def main():
     args = parser.parse_args()
     comparator = AblationComparator(ablation_dir=args.ablation_dir, main_dir=args.main_dir)
     comparator.run()
+
 if __name__ == '__main__':
     main()
