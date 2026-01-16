@@ -123,16 +123,16 @@ make -j4
 ## Readings
 
 - [1] 📍 ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, ICLR 2021 Oral.
-- [2] 📍 BYOL: Bootstrap your own latent: A new approach to self-supervised Learning, NeurIPS 2020. Google Deepmind.
+- [2] 📍 BYOL: Bootstrap your own latent: A new approach to self-supervised Learning, Google Deepmind, NeurIPS 2020.
 - [3] 📍 CLIP: Learning Transferable Visual Models From Natural Language Supervision, ICML 2021.
-- [4] 📍 AlexNet, 2011.
+- [4] 📍 AlexNet: ImageNet Classification with Deep Convolutional Neural Networks, NeurIPS 2012.
 - [5] DINOv2: Learning Robust Visual Features without Supervision, 2024.
 - [6] Large-scale pancreatic cancer detection via non-contrast CT and deep learning, Nature 2023.
 - [7] Debiasing Real-World Data to Enable Causal Inference As If From A Random Trail, arvix 2026.
 - [8] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
 - [9] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
 - [10] Multimodal LLMs for health grounded in individual-specific data, 2023.
-- [11] ImageNet, 2009.
+- [11] ImageNet: A large-scale hierarchical image database, 2009.
 - [12] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras.
 
 
