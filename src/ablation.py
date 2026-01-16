@@ -10,7 +10,9 @@ from ssl_encoder import SSLEncoder
 from classifier import TransplantabilityClassifier
 from sklearn.metrics import accuracy_score, sensitivity_score, specificity_score
 from sklearn.metrics import precision_score, f1_score, roc_auc_score, confusion_matrix
+
 class MinimalMLP(nn.Module):
+   
     def __init__(self, input_dim: int, num_classes: int = 2, hidden_dim: int = 64,
                  num_layers: int = 1, dropout: float = 0.3, l2_weight: float = 1e-4):
         super().__init__()
@@ -24,13 +26,16 @@ class MinimalMLP(nn.Module):
             prev_dim = hidden_dim
         layers.append(nn.Linear(prev_dim, num_classes))
         self.net = nn.Sequential(*layers)
+   
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         return self.net(x)
+   
     def get_l2_loss(self) -> torch.Tensor:
         l2_loss = torch.tensor(0.0, device=next(self.parameters()).device)
         for param in self.parameters():
             l2_loss += torch.sum(param ** 2)
         return self.l2_weight * l2_loss
+
 class AblationStudy:
     def __init__(self, device: torch.device, output_dir: str):
         self.device = device
@@ -38,6 +43,7 @@ class AblationStudy:
         self.output_dir.mkdir(parents=True, exist_ok=True)
         self.results = {}
         self.configurations = self._define_configurations()
+  
     def _define_configurations(self) -> Dict:
         return {
             'baseline_minimal': {
@@ -93,6 +99,7 @@ class AblationStudy:
                 'description': 'SSL encoder fine-tuned end-to-end'
             }
         }
+   
     def run_full_study(self, json_files: List[str], schema_path: str,
                       epochs: int = 100, batch_size: int = 8):
         dataset = DonorDataset(json_files, schema_path, normalize=True)
@@ -107,6 +114,7 @@ class AblationStudy:
             self.results[config_name] = metrics
         self._save_results()
         self._print_final_summary()
+  
     def _evaluate_loocv(self, dataset: DonorDataset, config: Dict,
                        epochs: int, batch_size: int) -> Dict:
         n = len(dataset)
@@ -164,6 +172,7 @@ class AblationStudy:
         all_probabilities = np.array(all_probabilities)
         metrics = self._compute_metrics(all_predictions, all_labels, all_probabilities)
         return metrics
+ 
     def _compute_metrics(self, predictions: np.ndarray, ground_truth: np.ndarray,
                         probabilities: np.ndarray) -> Dict:
         metrics = {
@@ -173,6 +182,7 @@ class AblationStudy:
             'precision': float(precision_score(ground_truth, predictions, average='binary', zero_division=0)),
             'f1': float(f1_score(ground_truth, predictions, average='binary', zero_division=0))
         }
+   
         if len(np.unique(ground_truth)) > 1:
             metrics['auc_roc'] = float(roc_auc_score(ground_truth, probabilities))
         else:
@@ -183,11 +193,13 @@ class AblationStudy:
         metrics['fn'] = int(fn)
         metrics['tp'] = int(tp)
         return metrics
+   
     def _save_results(self):
         output_path = self.output_dir / 'ablation_results.json'
         with open(output_path, 'w') as f:
             json.dump(self.results, f, indent=4)
         print(f"\nResults saved to {output_path}")
+ 
     def _print_final_summary(self):
         print("\n" + "=" * 130)
         print("ABLATION STUDY SUMMARY - LEAVE-ONE-OUT CROSS-VALIDATION RESULTS")
@@ -209,6 +221,7 @@ class AblationStudy:
         print("-" * 130)
         print(f"\nBest performing configuration: {best_config} (accuracy: {best_accuracy:.4f})")
         print("=" * 130)
+
 def main():
     parser = argparse.ArgumentParser(
         description='Ablation study for liver transplantability prediction model',
@@ -227,5 +240,6 @@ def main():
     print(f"Device: {device}")
     ablation = AblationStudy(device, args.output_dir)
     ablation.run_full_study(args.json_files, args.schema_path, args.epochs, args.batch_size)
+
 if __name__ == '__main__':
     main()
