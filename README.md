@@ -26,7 +26,7 @@ All experimental results reported in the paper were obtained using confidential 
 
 
 <p align="left">
-  <img src="https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/1.png" alt="Project 1 Visualization" width="60%">
+  <img src="https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/encoder.png" alt="Project 1 Visualization" width="60%">
 </p>
 
 
@@ -92,6 +92,15 @@ Liver_predictor/
 
 <br>
 
+
+<p align="left">
+  <img src="https://github.com/yiruyang2025/Liver_Predictor/blob/main/assets/workflow.png" alt="Project 1 Visualization" width="60%">
+</p>
+
+
+
+<br>
+
 ## Get Started
 
 ### 1. Prerequisites
@@ -116,14 +125,14 @@ make -j4
 - [1] 📍 ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, ICLR 2021 Oral.
 - [2] 📍 BYOL: Bootstrap your own latent: A new approach to self-supervised Learning, NeurIPS 2020. Google Deepmind.
 - [3] 📍 CLIP: Learning Transferable Visual Models From Natural Language Supervision, ICML 2021.
-- [4] ImageNet, 2009.
-- [5] 📍 AlexNet, 2011.
-- [6] DINOv2: Learning Robust Visual Features without Supervision, 2024.
-- [7] Large-scale pancreatic cancer detection via non-contrast CT and deep learning, Nature 2023.
-- [8] Debiasing Real-World Data to Enable Causal Inference As If From A Random Trail, arvix 2026.
-- [9] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
-- [10] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
-- [11] Multimodal LLMs for health grounded in individual-specific data, 2023.
+- [4] 📍 AlexNet, 2011.
+- [5] DINOv2: Learning Robust Visual Features without Supervision, 2024.
+- [6] Large-scale pancreatic cancer detection via non-contrast CT and deep learning, Nature 2023.
+- [7] Debiasing Real-World Data to Enable Causal Inference As If From A Random Trail, arvix 2026.
+- [8] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
+- [9] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
+- [10] Multimodal LLMs for health grounded in individual-specific data, 2023.
+- [11] ImageNet, 2009.
 - [12] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras.
 
 
