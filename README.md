@@ -20,6 +20,7 @@ Due to strict clinical governance and patient confidentiality, raw donor data an
 - complete preprocessing and modeling code
 - full data schema from `json`
 - synthetic example donors<br>
+- allocation + synetic data + biomarker<br>
 
 All experimental results reported in the paper were obtained using confidential hospital-internal data under approved protocols
 
