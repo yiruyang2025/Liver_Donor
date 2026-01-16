@@ -88,7 +88,7 @@ Liver_predictor/
 
 <br>
 
-> To address the above fundamental fallback we propose ★ Liver Predictor, a SSL model for liver transplantability prediction under extreme data scarcity.<br>
+> To address the above fundamental Drawback, we propose ★ Liver Predictor, a SSL Model for liver transplantability prediction under extreme data scarcity.<br>
 
 <br>
 
@@ -113,19 +113,19 @@ make -j4
 
 ## Readings
 
-- [1] Multimodal LLMs for health grounded in individual-specific data, 2023.
-- [2] AlexNet: Visual and Semantic Similarity in ImageNet, 2011.
-- [3] 📍 ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, 2021.
-- [4] SimCLR – Chen et al., ICML 2020.
-- [5] BYOL – Grill et al., NeurIPS 2020.
-- [6] From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence, 2026.
-- [7] DINO – Caron et al., ICCV 2021.
-- [8] A Survey on Self-Supervised Representation Learning, 2023.
-- [9] TabPFN – Hollmann et al., ICLR 2023.
-- [10] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
-- [11] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
-- [12] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras
-- [13] Graphs Generation, https://answerthis.io/home-2?ref=faheem42.
+- [1] 📍 ViT: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale, ICLR 2021 Oral.
+- [2] 📍 BYOL: Bootstrap your own latent: A new approach to self-supervised Learning, NeurIPS 2020. Google Deepmind.
+- [3] 📍 CLIP: Learning Transferable Visual Models From Natural Language Supervision, ICML 2021.
+- [4] ImageNet, 2009.
+- [5] 📍 AlexNet, 2011.
+- [6] DINOv2: Learning Robust Visual Features without Supervision, 2024.
+- [7] Large-scale pancreatic cancer detection via non-contrast CT and deep learning, Nature 2023.
+- [8] Debiasing Real-World Data to Enable Causal Inference As If From A Random Trail, arvix 2026.
+- [9] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
+- [10] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
+- [11] Multimodal LLMs for health grounded in individual-specific data, 2023.
+- [12] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras.
+
 
 
 <br><br><br>
