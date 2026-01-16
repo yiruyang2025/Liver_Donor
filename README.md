@@ -128,8 +128,8 @@ make -j4
 - [4] 📍 AlexNet: ImageNet Classification with Deep Convolutional Neural Networks, NeurIPS 2012.
 - [5] DINOv2: Learning Robust Visual Features without Supervision, 2024.
 - [6] Large-scale pancreatic cancer detection via non-contrast CT and deep learning, Nature 2023.
-- [7] Debiasing Real-World Data to Enable Causal Inference As If From A Random Trail, arvix 2026.
-- [8] A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
+- [7] SimCLR: A Simple Framework for Contrastive Learning of Visual Representations. ICML 2020.
+- [8] Debiasing Real-World Data to Enable Causal Inference As If From A Random Trail, arvix 2026.
 - [9] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
 - [10] Multimodal LLMs for health grounded in individual-specific data, 2023.
 - [11] ImageNet: A large-scale hierarchical image database, 2009.
