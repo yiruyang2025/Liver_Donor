@@ -138,7 +138,8 @@ make -j4
 - [9] Revisiting Deep Learning Models for Tabular Data, NeurIPS 2021.
 - [10] Multimodal LLMs for health grounded in individual-specific data, 2023.
 - [11] ImageNet: A large-scale hierarchical image database, 2009.
-- [12] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras.
+- [12] [Medical AI at DeepMind](https://www.linkedin.com/in/alankarthi/)
+- [13] Teras: A Unified Deep Learning Library for Tabular Data, https://github.com/KhawajaAbaid/teras.
 
 
 
